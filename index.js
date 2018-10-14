@@ -67,9 +67,9 @@ function getChallengesCompletedAndPushToUserArray(userData) {
         // will equal to the number of elements with 
         // this id 
         if (i == 0) {
-          console.log( $('tbody'))
+          console.log($('body tr'));
         }
-        const challengesPassed = fccAccount ? $('tbody tr').length : "unknown";
+        const challengesPassed = (fccAccount ? $('tbody').length : "unknown");
         // put information in the table
         table.push([userData[i].name, userData[i].likes_received, challengesPassed]);
         i++;
